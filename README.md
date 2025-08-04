@@ -1,0 +1,1 @@
+# Docker para desenvolvimento local usando postgresql 17 e redis 8

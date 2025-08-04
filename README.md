@@ -1,5 +1,7 @@
 ## Variáveis de ambiente
 
+Arquivo `.env`
+
 ```bash
 POSTGRES_DB=database
 POSTGRES_USER=postgres

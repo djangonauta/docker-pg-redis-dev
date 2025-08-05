@@ -1,6 +1,12 @@
+# Django docker dev
+
+[Docker compose](https://docs.docker.com/compose/) para desenvolvimento local de aplicações [Django](https://djangoproject.com)
+usando [Postgresql](https://www.postgresql.org/), [Redis](https://redis.io/) e [RabbitMQ](https://www.rabbitmq.com/).
+
 ## Variáveis de ambiente
 
-Arquivo `.env`
+As variáveis de ambiente necessárias para execução dos serviços devem ser definidas em um arquivo `.env` na raiz
+do projeto:
 
 ```bash
 POSTGRES_DB=database
@@ -17,4 +23,18 @@ RABBITMQ_USER=rabbitmq
 RABBITMQ_PASSWORD=admin
 RABBITMQ_HOST=localhost
 RABBITMQ_PORT=5672
+```
+
+## Execução dos serviços
+
+Iniciar e subir os serviços:
+
+```bash
+docker compose up -d
+```
+
+Desligar os servicos:
+
+```bash
+docker compose down
 ```
